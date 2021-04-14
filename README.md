@@ -4,7 +4,7 @@ Simple pptx file convertor. Powerpoint application is required.
 ## Installation
 
 ```
-pip install pptxconvertor
+pip install PPTXConvertor
 ```
 
 ## Example
