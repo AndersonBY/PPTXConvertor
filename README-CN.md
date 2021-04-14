@@ -1,15 +1,13 @@
 # PPTXCONVERTOR
-Simple pptx file convertor. Powerpoint application is required.
+PPT和PPTX文件批量转换工具，要求电脑中装有PowerPoint。
 
-[中文文档](README-CN.md)
-
-## Installation
+## 安装
 
 ```
 pip install PPTXConvertor
 ```
 
-## Example
+## 示例
 
 ```Python
 from PPTXConvertor import PPTXConvertor
@@ -19,11 +17,11 @@ convertor.convert('PDF')
 convertor.convert('JPG')
 ```
 
-## Supported formats
+## 支持的格式
 
-According to [PpSaveAsFileType](https://docs.microsoft.com/en-us/office/vba/api/powerpoint.ppsaveasfiletype), the following types are supported.
+根据 [PpSaveAsFileType](https://docs.microsoft.com/en-us/office/vba/api/powerpoint.ppsaveasfiletype)，可以支持以下格式。
 
-So parameter in convert() function must be one of the following name string.
+convert()函数中必须填入以下格式的字符串，否则不支持。
 
 - AddIn
 - AnimatedGIF
