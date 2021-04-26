@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 # @Author: Anderson
 # @Date:   2019-11-14 17:45:03
-# @Last Modified by:   ander
-# @Last Modified time: 2021-04-14 17:39:43
+# @Last Modified by:   Anderson
+# @Last Modified time: 2021-04-26 16:37:29
 import setuptools
 
 
 setuptools.setup(
     name="PPTXConvertor",
-    version="0.0.2",
+    version="0.0.3",
     author="MakerBi",
     author_email="andersonby@163.com",
     description="Simple pptx file convertor. Powerpoint application is required.",
