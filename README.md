@@ -14,7 +14,15 @@ pip install PPTXConvertor
 ```Python
 from PPTXConvertor import PPTXConvertor
 
-convertor = PPTXConvertor('path/to/input/folder', 'path/to/output/folder')
+convertor = PPTXConvertor('path/to/input/folder_or_file')
+convertor.convert('PDF')
+convertor.convert('JPG')
+```
+
+```Python
+from PPTXConvertor import PPTXConvertor
+
+convertor = PPTXConvertor('path/to/input/folder_or_file', 'path/to/output/folder_or_file')
 convertor.convert('PDF')
 convertor.convert('JPG')
 ```
