@@ -2,11 +2,10 @@
 # @Author: ander
 # @Date:   2021-04-14 16:14:21
 # @Last Modified by:   Anderson
-# @Last Modified time: 2021-08-10 18:08:59
+# @Last Modified time: 2021-08-10 18:17:40
 import comtypes.client
 import os
 from pathlib import Path
-import sys
 
 
 class PPTXConvertor:
