@@ -2,9 +2,9 @@
 # @Author: ander
 # @Date:   2021-04-14 16:14:21
 # @Last Modified by:   Anderson
-# @Last Modified time: 2021-08-10 18:17:40
-import comtypes.client
+# @Last Modified time: 2022-05-19 00:53:36
 import os
+import comtypes.client
 from pathlib import Path
 
 
@@ -91,13 +91,13 @@ class PPTXConvertor:
         self.powerpoint.Visible = 1
 
         if self.input.is_file():
-            if len(self.output.suffix) > 0:
+            if self.output.is_file():
                 self._convert_single_file(self.input, os.path.abspath(self.output))
             else:
                 output_path = self.output / (self.input.stem + self.fileext_map[output_type])
                 self._convert_single_file(self.input, os.path.abspath(output_path))
         elif self.input.is_dir():
-            if len(self.output.suffix) > 0:
+            if self.output.is_file():
                 raise ValueError("Input parameter is a folder while output parameter is a file.")
             else:
                 for child in self.input.iterdir():
